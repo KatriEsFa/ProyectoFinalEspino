@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Usuario</title>
+</head>
+
+<body>
+    <main>
+        <div id="createUserDivForm">
+            <h1>Formulario de Registro de Usuario</h1>
+            <form>
+                <div id="">
+                    <input type="text" placeholder="Nombre" id="newUserName">
+                    <input type="text" placeholder="Apellido" id="newUserLName">
+                </div>
+                <div>
+                    <input type="text" placeholder="Correo" id="newUserMail">
+                </div>
+                <div>
+                    <input type="password" placeholder="Contraseña" id="newUserPass">
+                </div>
+                <div>
+                    <select required id="newUserSpec">
+                        <option disabled selected value="">Elija aquí su especialidad</option>
+                        <option value="Biología">Biología</option>
+                        <option value="Física">Física</option>
+                        <option value="Química">Química</option>
+                    </select>
+                </div>
+                <button id="btnFormNewUser" type="reset"> Registrarse </button>
+            </form>
+
+        </div>
+
+    </main>
+    <script src="../script/components/createuser.js" type="module"></script>
+</body>
+
+</html>
