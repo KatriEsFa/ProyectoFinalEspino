@@ -2,7 +2,7 @@
 export const usuariosArray = [
     {
         userName: "AlejandraRossi",
-        id: "1",
+        id: 1,
         nombre: "Alejandra",
         apellido: "Rossi",
         email: "arossi@safaaguada.edu.uy",
@@ -14,7 +14,7 @@ export const usuariosArray = [
     },
     {
         userName: "KatrielEspino",
-        id: "2",
+        id: 2,
         nombre: "Katriel",
         apellido: "Espino",
         email: "kespino@safaaguada.edu.uy",
@@ -26,7 +26,7 @@ export const usuariosArray = [
     },
     {
         userName: "ArielFranano",
-        id: "3",
+        id: 3,
         nombre: "Ariel",
         apellido: "Franano",
         email: "afranano@safaaguada.edu.uy",
@@ -38,7 +38,7 @@ export const usuariosArray = [
     },
     {
         userName: "AlbertoSensato",
-        id: "4",
+        id: 4,
         nombre: "Alberto",
         apellido: "Sensato",
         email: "asensato@safaaguada.edu.uy",
@@ -50,7 +50,7 @@ export const usuariosArray = [
     },
     {
         userName: "PedroCaraman",
-        id: "5",
+        id: 5,
         nombre: "Pedro",
         apellido: "Caraman",
         email: "pcaraman@safaaguada.edu.uy",
@@ -62,7 +62,7 @@ export const usuariosArray = [
     },
     {
         userName: "AlejandraRecouso",
-        id: "6",
+        id: 6,
         nombre: "Alejandra",
         apellido: "Recouso",
         email: "arecouso@safaaguada.edu.uy",
@@ -74,7 +74,7 @@ export const usuariosArray = [
     },
     {
         userName: "RobertoSepulveda",
-        id: "7",
+        id: 7,
         nombre: "Roberto",
         apellido: "Sepulveda",
         email: "rsepulveda@safaaguada.edu.uy",
@@ -86,7 +86,7 @@ export const usuariosArray = [
     },
     {
         userName: "GustavoBentancur",
-        id: "8",
+        id: 8,
         nombre: "Gustavo",
         apellido: "Bentancur",
         email: "gbentancur@safaaguada.edu.uy",
@@ -98,7 +98,7 @@ export const usuariosArray = [
     },
     {
         userName: "DahianaMartinez",
-        id: "9",
+        id: 9,
         nombre: "Dahiana",
         apellido: "Martínez",
         email: "dmartinez@safaaguada.edu.uy",
@@ -110,7 +110,7 @@ export const usuariosArray = [
     },
     {
         userName: "GracielaAbreo",
-        id: "10",
+        id: 10,
         nombre: "Graciela",
         apellido: "Abreo",
         email: "gabreo@safaaguada.edu.uy",

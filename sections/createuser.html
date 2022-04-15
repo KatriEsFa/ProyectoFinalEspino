@@ -12,13 +12,19 @@
     <main>
         <div id="createUserDivForm">
             <h1>Formulario de Registro de Usuario</h1>
+            <h2 id="alertUserCreation"></h2>
             <form>
-                <div id="">
-                    <input type="text" placeholder="Nombre" id="newUserName">
-                    <input type="text" placeholder="Apellido" id="newUserLName">
-                </div>
                 <div>
-                    <input type="text" placeholder="Correo" id="newUserMail">
+                    <label for="userName">Elija su nombre de Usuario</label>
+                    <input type="text" id="userName">
+                </div>
+                <div id="">
+                    <input type="text" placeholder="Nombre" id="newFirstName">
+                    <input type="text" placeholder="Apellido" id="newLastName">
+                </div>
+
+                <div>
+                    <input type="email" placeholder="Correo" id="newUserMail">
                 </div>
                 <div>
                     <input type="password" placeholder="Contraseña" id="newUserPass">

@@ -1,24 +1,32 @@
 import { Usuario } from "../constructors/constructorusuario.js";
 import { obtainUsers } from "../components/sessioncheck.js";
+import { userValidation } from "../components/usersvalidation.js";
+import { setCurrentUser } from "./setcurrentuser.js";
 
 document.getElementById("btnFormNewUser").addEventListener("click", () => {
-    let newUserName = document.getElementById("newUserName").value;
-    let newUserLName = document.getElementById("newUserLName").value;
-    let user = newUserName + newUserLName;
+    const usersObtained = obtainUsers();
+
+    let newFirstName = document.getElementById("newFirstName").value;
+    let newLastName = document.getElementById("newLastName").value;
+    let userName = document.getElementById("userName").value;
     let newUserMail = document.getElementById("newUserMail").value;
     let newUserPass = document.getElementById("newUserPass").value;
     let newUserSpec = document.getElementById("newUserSpec").value;
-    let newUserID = usuariosArray.length + 1;
+    let newUserID = Math.max(...usersObtained.map((e) => e.id)) + 1;
     let newUserPrestamosActuales = [];
     let newUserPrestamosHistoricos = [];
 
+    const newUser = new Usuario(userName, newUserID, newFirstName, newLastName, newUserMail, newUserPass, newUserSpec, newUserPrestamosActuales, newUserPrestamosHistoricos);
+    const errorUser = userValidation(newUser);
+    if (!errorUser) {
+        usersObtained.push(newUser);
+        localStorage.setItem("usuariosPreCargados", JSON.stringify(usersObtained));
+        setCurrentUser(newUser);
+        window.location.replace("/sections/userindex.html");
 
+    } else {
+        document.getElementById("alertUserCreation").innerHTML = errorUser;
+    }
 
-    const newUser = new Usuario(user, newUserID, newUserName, newUserLName, newUserMail, newUserPass, newUserSpec, newUserPrestamosActuales, newUserPrestamosHistoricos);
-
-    const usersObtained = obtainUsers();
-
-    usersObtained.push(newUser);
-    localStorage.setItem("usuariosPreCargados", JSON.stringify(usersObtained));
-})
+});
 //una vez que esto se crea debería re-dirigir a la página de inicio con la parte cargada
