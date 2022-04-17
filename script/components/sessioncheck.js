@@ -1,16 +1,8 @@
 import { usuariosArray } from "../data/usuariosarray.js";
 
 export function obtainUsers() {
-
-    let result = [];
     const usuariosArrayJSON = localStorage.getItem("usuariosPreCargados");
-
-    if (usuariosArrayJSON != undefined) {
-        result = JSON.parse(usuariosArrayJSON);
-    } else {
-        result = usuariosArray
-    }
-    return result;
+    return usuariosArrayJSON != undefined ? JSON.parse(usuariosArrayJSON) : usuariosArray;
 }
 
 export function obtainCurrentUser() {
