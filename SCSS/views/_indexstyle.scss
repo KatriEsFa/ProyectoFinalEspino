@@ -1,8 +1,17 @@
-#mainLogIn {
-    display: flex;
-    flex-direction: row;
+#principalIndexBody {
+    justify-content: center;
     align-items: center;
+    height: 100%;
 
+    #mainLogIn {
+        #divLogInForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40%;
+            shape-margin: 3px;
+        }
 
-
+    }
 }

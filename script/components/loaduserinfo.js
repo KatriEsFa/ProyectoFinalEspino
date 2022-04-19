@@ -1,1 +1,3 @@
-export function obtainUserInfo()
+export function obtainUserInfo() {
+
+}

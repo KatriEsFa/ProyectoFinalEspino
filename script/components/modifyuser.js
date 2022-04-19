@@ -3,11 +3,11 @@ import { userValidation } from "./usersvalidation";
 import { setCurrentUser } from "./setcurrentuser";
 window.addEventListener("DOMContentLoaded", displayUserInfo());
 function displayUserInfo() {
-    let currentUser = obtainCurrentUser();
-    document.getElementById("changedUserName").value = currentUser.userName;
-    document.getElementById("changedFirstName").value = currentUser.nombre;
-    document.getElementById("changedLastName").value = currentUser.apellido;
-    document.getElementById("changedUserMail").value = currentUser.email;
+    const { userName, nombre, apellido, email } = obtainCurrentUser();
+    document.getElementById("changedUserName").value = userName;
+    document.getElementById("changedFirstName").value = nombre;
+    document.getElementById("changedLastName").value = apellido;
+    document.getElementById("changedUserMail").value = email;
 };
 
 function modifyUserInfo() {
@@ -17,8 +17,8 @@ function modifyUserInfo() {
     const changedUserMail = document.getElementById("changedUserMail").value;
     const changedUserPass = document.getElementById("changedUserPass").value;
     let users = obtainUsers();
-    let currentUser = obtainCurrentUser();
-    let user = users.find((e) => e.id == currentUser.id);
+    let currentUser = obtainCurrentUser().id;
+    let user = users.find((e) => e.id === currentUser);
     user.userName = changedUserName;
     user.nombre = changedFirstName;
     user.apellido = changedLastName;

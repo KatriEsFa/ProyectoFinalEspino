@@ -6,16 +6,16 @@ window.addEventListener("DOMContentLoaded", userListViewer);
 function userListViewer() {
     const users = obtainUsers();
     for (let i = 0; i <= users.length - 1; i++) {
-        let user = users[i];
+        const { userName, id } = users[i];
         let divUser = document.createElement("div");
         divUser.innerHTML =
             `
-            <div> ${user.userName} </div> <button id="deleteButton${user.id}">Borrar Usuario</button>
+            <div> ${userName} </div> <button id="deleteButton${id}">Borrar Usuario</button>
             `
         document.getElementById("usersList").appendChild(divUser);
-        document.getElementById("deleteButton" + user.id).addEventListener("click", () => {
-            if (confirm(`¿Desea borrar a ${user.userName}?`) == true) {
-                deleteUser(user.id);
+        document.getElementById("deleteButton" + id).addEventListener("click", () => {
+            if (confirm(`¿Desea borrar a ${userName}?`) == true) {
+                deleteUser(id);
                 location.reload();
             }
         });

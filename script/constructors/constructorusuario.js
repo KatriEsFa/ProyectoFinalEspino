@@ -1,5 +1,5 @@
 export class Usuario {
-    constructor(userName, id, nombre, apellido, email, password, especialidad, prestamosActuales, prestamosHistorico, foto) {
+    constructor(userName, id, nombre, apellido, email, password, especialidad, prestamosActuales, prestamosHistorico) {
         this.userName = userName;
         this.id = id;
         this.nombre = nombre;
@@ -9,6 +9,5 @@ export class Usuario {
         this.especialidad = especialidad;
         this.prestamosActuales = prestamosActuales;
         this.prestamosHistorico = prestamosHistorico;
-
     }
 }
