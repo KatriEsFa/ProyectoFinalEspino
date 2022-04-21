@@ -1,5 +1,5 @@
 import { obtainUsers } from "../components/sessioncheck.js";
-import { setCurrentUser } from "../components/setcurrentuser";
+import { setCurrentUser } from "../components/setcurrentuser.js";
 
 document.getElementById("iniciarSesionBtn").addEventListener("click", () => {
     let userInHTML = document.getElementById("userName").value;
