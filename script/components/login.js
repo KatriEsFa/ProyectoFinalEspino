@@ -9,10 +9,23 @@ document.getElementById("iniciarSesionBtn").addEventListener("click", () => {
     if ((usersObtained.some(({ userName, password }) => userName === userInHTML && password === passInHTML))) {
         const logedUser = usersObtained.find(({ userName }) => userName === userInHTML);
         setCurrentUser(logedUser);
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Usuario logueado correctamente',
+            showConfirmButton: false,
+            timer: 2000
+        })
         window.location.replace("/sections/userindex.html");
     }
     else {
-        document.getElementById("alertSesionFailed").innerHTML = "Los datos ingresados no son correctos, intente nuevamente";
+        Swal.fire({
+            position: 'top',
+            icon: 'error',
+            title: 'Los datos ingresados no son correctos, intente nuevamente',
+            showConfirmButton: false,
+            timer: 2000
+        })
 
     }
 });

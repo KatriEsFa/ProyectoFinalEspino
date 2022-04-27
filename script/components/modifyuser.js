@@ -33,6 +33,13 @@ function modifyUserInfo() {
     } else {
         document.getElementById("alertTextInvChange").innerHTML = userInvalid;
     }
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Usuario modificado correctamente',
+        showConfirmButton: false,
+        timer: 2000
+    });//Este alert puede no funcionar si el current user no está grabado
 }
 document.getElementById("btnEditUser").addEventListener("click", modifyUserInfo);
 
