@@ -35,5 +35,6 @@ function modifyUserInfo() {
     }
 }
 document.getElementById("btnEditUser").addEventListener("click", modifyUserInfo);
+
 // que ya tiene y otra que los modifique y guarde.
 

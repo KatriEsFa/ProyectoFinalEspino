@@ -29,4 +29,3 @@ document.getElementById("btnFormNewUser").addEventListener("click", () => {
     }
 
 });
-//una vez que esto se crea debería re-dirigir a la página de inicio con la parte cargada

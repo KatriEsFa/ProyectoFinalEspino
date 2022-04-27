@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.css">
     <link rel="stylesheet" href="./CSS/main.css">
     <title>Laboratorio SAFA</title>
 </head>
@@ -22,11 +22,11 @@
             <h3 id="alertSesionFailed"></h3>
             <form class="formInicioSesion">
                 <div class="formPartSesion">
-                    <label for="userNane">Usuario</label>
+                    <label for="userNane" class="labelFormLogIn">Usuario</label>
                     <input type="text" id="userName">
                 </div>
                 <div class="formPartSesion">
-                    <label for="password">Contraseña</label>
+                    <label for="password" class="labelFormLogIn">Contraseña</label>
                     <input type="password" id="userPass">
                 </div>
                 <div class="formPartSesion">
@@ -52,6 +52,10 @@
     </footer>
 
     <script src="/script/components/login.js" type="module"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
