@@ -22,10 +22,18 @@ document.getElementById("btnFormNewUser").addEventListener("click", () => {
         usersObtained.push(newUser);
         localStorage.setItem("usuariosPreCargados", JSON.stringify(usersObtained));
         setCurrentUser(newUser);
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'La cuenta ha sido creada con éxito!',
+            showConfirmButton: false,
+            timer: 2000
+        });
+        //Falta resolver que se haga el replace luego de que termine el timer
         window.location.replace("/sections/userindex.html");
 
     } else {
-        document.getElementById("alertUserCreation").innerHTML = errorUser;
+        userValidation(newUser);
     }
 
 });
