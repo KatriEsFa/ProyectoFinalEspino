@@ -1,6 +1,6 @@
-import { obtainCurrentUser, obtainUsers } from "./sessioncheck";
-import { userValidation } from "./usersvalidation";
-import { setCurrentUser } from "./setcurrentuser";
+import { obtainCurrentUser, obtainUsers } from "./sessioncheck.js";
+import { userValidation } from "./usersvalidation.js";
+import { setCurrentUser } from "./setcurrentuser.js";
 window.addEventListener("DOMContentLoaded", displayUserInfo());
 function displayUserInfo() {
     const { userName, nombre, apellido, email } = obtainCurrentUser();

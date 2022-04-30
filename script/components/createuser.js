@@ -28,8 +28,7 @@ document.getElementById("btnFormNewUser").addEventListener("click", () => {
             title: 'La cuenta ha sido creada con éxito!',
             showConfirmButton: false,
             timer: 2000
-        });
-        //Falta resolver que se haga el replace luego de que termine el timer
+        }).then;
         window.location.replace("/sections/userindex.html");
 
     } else {
