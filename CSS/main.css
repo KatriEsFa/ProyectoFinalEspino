@@ -11,6 +11,7 @@ body {
   width: 100%;
   background-color: #b2ffe9;
   position: fixed;
+  top: 0px;
   font-size: 16px; }
   #headerUserIndex #iconoMenuInicio {
     max-height: 60px; }
@@ -122,3 +123,6 @@ body {
           background-color: #b2ffe9;
           padding: 4px;
           margin-top: 5px; }
+
+main {
+  margin-top: 65px; }
