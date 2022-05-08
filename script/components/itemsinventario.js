@@ -7,7 +7,8 @@ function showItems() {
         .then((data) => (
 
             data.forEach(element => {
-                const li = document.createElement("li.item")
+                const li = document.createElement("li");
+                li.classList.add("item")
                 li.innerHTML =
                     `
                     <h3>${element.nombreItem}</h3>
