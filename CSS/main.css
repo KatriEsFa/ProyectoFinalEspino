@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;1,300&family=Exo+2:ital,wght@1,300&family=Oswald:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap");
 body {
-  font-family: 'Barlow Condensed', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; }
 
 #headerUserIndex {
   max-height: 60px;
@@ -9,7 +10,8 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #b2ffe9;
+  background-color: #24252a;
+  color: #edf0f1;
   position: fixed;
   top: 0px;
   font-size: 16px; }
@@ -24,10 +26,13 @@ body {
     justify-content: flex-end; }
     #headerUserIndex #navBar .navLinksUl {
       display: flex;
+      list-style: none;
       justify-content: space-between;
       align-items: center; }
       #headerUserIndex #navBar .navLinksUl .navListItem {
-        color: black;
+        display: inline-block;
+        padding: 0 5px;
+        color: #edf0f1;
         font-weight: 500; }
     #headerUserIndex #navBar #divTinyUser {
       max-height: 100%;
@@ -120,7 +125,8 @@ body {
           font-weight: 300; }
         #principalIndexBody #mainLogIn #divLogInForm .formPartSesion #iniciarSesionBtn {
           border-radius: 4px;
-          background-color: #b2ffe9;
+          color: white;
+          background-color: #24252a;
           padding: 4px;
           margin-top: 5px; }
 
